@@ -1,0 +1,90 @@
+.frame {
+	height: 100vh;
+	display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+    text-align: center;
+}
+
+.intro-title {
+	font-weight: 500;
+	letter-spacing: 20px;
+	font-size: 200px;
+	opacity: 0.1;
+	text-align: center;
+	width: 100%;
+	/*padding-top:40vh;*/
+}
+
+.btn-box{
+	opacity: 0.0;
+}
+
+.holder svg{
+	width: 100vw;
+	height:100vh;
+	position: absolute;	
+
+}
+
+.holder svg path{
+	opacity: 0.0;
+	mix-blend-mode:multiply;
+}
+
+.st0{
+	fill:#F15829;
+	
+}
+.st1{
+	fill:#39BEB4;
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+	/*.holder svg{
+		transform-origin: 50% 50%;
+		transform: rotate(90deg) scale(-1, 1);
+	}*/
+	/*Possible fix for tall aspect ratios */
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+   /* Landscape styles here */
+}
+
+ /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+		.intro-title {
+			font-size: 150px;
+		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		.intro-title {
+			font-size: 120px;
+		}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.intro-title {
+			font-size: 60px;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+		.intro-title {
+			font-size: 40px;
+		}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        .intro-title {
+			font-size: 20px;
+		}
+    }
+

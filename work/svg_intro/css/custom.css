@@ -1,0 +1,53 @@
+.video-js {
+	background-color: rgb(253, 252, 254);
+	padding-top: 0px;
+}
+
+.btn-nav-hold {
+	z-index: 500;
+}
+
+#button-startscroll:hover {
+	cursor: pointer;
+}
+
+.container {
+	z-index: 200 !important;
+}
+
+.entry-box {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+#fp-video-1 {
+	-moz-box-shadow:    inset 0 0 10px #ffffff;
+	-webkit-box-shadow: inset 0 0 10px #ffffff;
+	box-shadow:         inset 0 0 10px #ffffff;
+}
+
+#example_video_1_html5_api {
+	background-color: #ffffff;
+	opacity: .5;
+}
+
+#in-vid {
+	z-index: 1000;
+}
+
+.entry-box {
+	background-color: rgb(253, 252, 254);
+}
+
+section.events, section.news, section.programs, section.sponsors, section.about-section, #footer {
+	position: relative;
+	z-index: 500;
+}

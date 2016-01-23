@@ -1,0 +1,121 @@
+
+
+/* #2bbeb4 rgba(43,190,180,1) */
+
+@font-face {
+  font-family: "Bryant Bold";
+  src: url("file://localhost/Users/ian/Sites/Taylor%20ANI/font/BryantWebBold.eot");
+  local:('Bryant Pro');
+  }
+@font-face {
+  font-family: "Bryant Medium";
+  src: url("file://localhost/Users/ian/Sites/Taylor%20ANI/font/BryantWebMedium.eot");
+  local:('Bryant');
+}
+@font-face {
+  font-family: "Bryant Regular";
+  src: url("file://localhost/Users/ian/Sites/Taylor%20ANI/font/BryantWebRegular.eot");
+  }
+  
+  
+.b-bold {
+   font-family: 'Bryant Bold', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+.b-medium {
+   font-family: 'Bryant Medium', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+.b-regular {
+   font-family: 'Bryant Regular', arial, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+body {
+	height: 5000px;
+}
+
+#t-welcome {
+	width: 100%;
+	top: 75%;
+	font-size: 36px;
+	text-wrap: none;
+	text-align: center;
+}
+
+#t-work {
+	width: 49%;
+	top: 28%;
+	text-align: right;
+}
+
+#t-workly {
+	width: 48%;
+	left: 52%;
+	text-align: left;
+	top: 28%;
+	height: 50%;
+}
+
+#t-on {
+	width: 45%;
+	top: 50%;
+	text-align: right;
+	color: rgba(43,190,180,1);
+}
+
+#t-problems {
+	width: 100%;
+	top: 55%;
+	text-align: center;
+	color: rgba(20,20,20,1);
+}
+
+#t-bound {
+	width: 100%;
+	top: 50%;
+	text-align: center;
+	color: rgba(20,20,20,1);
+}
+
+#t-hex {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: rgba(20,20,20,1);
+	top: 0;
+	left: 0;
+}
+
+#t-hex img {
+	position: absolute;
+	left: 50%;
+	right: 50%;
+}
+
+#t-safe {
+	width: 65%;
+	top: 70%;
+	text-align: right;
+	color: rgba(20,20,20,1);
+}
+
+.skroll h2 {
+	font-size: 30px;
+	font-face: "Bryant Medium", arial, sans-serif;
+}
+
+.skroll h3 {
+	margin-top: 0px;
+	font-size: 28px;
+	font-face: "Bryant Regular", arial, sans-serif;
+}
+
+#splash {
+	background-color: pink;
+	width: 100%;
+	height: 800px;
+}

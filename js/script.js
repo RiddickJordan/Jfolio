@@ -55,11 +55,5 @@
 	}
 	init();
 
-	function doWork(){
-		//kill #dancer tweens and hide
-		//hide #name
-		//morph #dancerPath
-	}
 
-	document.getElementById('work').onclick=doWork;
 })();
