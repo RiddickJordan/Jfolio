@@ -20,6 +20,10 @@ a:visited {
     cursor: auto;
 }
 
+h2{
+	margin:2rem 0;
+}
+
 #nav, #about_headers{
 	position: absolute;
 	margin: 0;
@@ -118,23 +122,47 @@ text{
 	height:100%;
 }
 
-.project_types{
-	margin:10% 0 0 0;
-	padding:0;
-	list-style: none;
-	min-width:100%;
-	text-align: justify;
+.tabs {
+  position: relative;   
+  min-height: 70%; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+  overflow: hidden;
+}
+.tab {
+  float: left;
+  min-width: 25%;
+}
+.tab label {
+  padding: 10px; 
+  border-bottom: 1px solid #ccc;
+  margin:2rem 0;
+  /*margin-left: -1px; */
+  position: relative;
+  /*left: 1px; */
+  font-size: 1.5em;
+}
+.tab [type=radio] {
+  display: none;   
 }
 
-.project_types:after{
-    content: '';
-    display: inline-block;
-    width: 100%;
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0 0 0;
+  /*border: 1px solid #ccc; */
 }
-
-.project_types li{
-	font-size: 1.5em;
-	display: inline-block;
+[type=radio]:checked ~ label {
+  /*background: white;*/
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }
 
 .project_container{
@@ -161,6 +189,8 @@ text{
 	left: 0;
 	bottom: 0;
 	right: 0;
+	margin-top: 3%;
+	border-top:solid;
 }
 
 .project_description{
@@ -170,6 +200,16 @@ text{
 	right:0;
 	width: 47%;
     margin: 0;
+}
+
+.project_description h3{
+	font-size: 1.5em;
+	margin:.5em 0;
+}
+
+
+.project_description h4{
+	margin:0;
 }
 
 
