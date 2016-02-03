@@ -1,0 +1,401 @@
+html, body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "DINAlternate-Bold", sans-serif;
+  font-size: 16px; }
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto; }
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto; }
+
+h2 {
+  margin: 2rem 0; }
+
+#nav {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+#nav a {
+  color: #3F5DD7; }
+
+#nav_work {
+  text-align: center; }
+
+#nav_work a {
+  cursor: n-resize !important; }
+
+#nav_contact {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: 0;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  /* IE6,IE7 */
+  ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  /* IE8 */
+  -moz-transform: rotate(-270deg);
+  /* FF3.5+ */
+  -o-transform: rotate(-270deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-270deg);
+  /* Safari 3.1+, Chrome */ }
+
+#nav_contact a {
+  cursor: e-resize !important; }
+
+#nav_about {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  /* IE6,IE7 */
+  ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  /* IE8 */
+  -moz-transform: rotate(-180deg);
+  /* FF3.5+ */
+  -o-transform: rotate(-180deg);
+  /* Opera 10.5 */
+  -webkit-transform: rotate(-180deg);
+  /* Safari 3.1+, Chrome */ }
+
+#nav_about a {
+  cursor: s-resize !important; }
+
+/*~~~~~~index~~~~~~~~*/
+#home {
+  min-height: 100%;
+  width: 100%; }
+
+#dancePath {
+  fill: none;
+  stroke: #3F5DD7;
+  stroke-width: 6;
+  stroke-miterlimit: 10; }
+
+text {
+  font-size: 6.75rem; }
+
+#dancer ellipse {
+  fill: #FFF; }
+
+/*~~~~~~~~~~~~~~~~~WORK.HTML*/
+#work {
+  margin: 6rem auto 0 auto;
+  padding: 0;
+  width: 75%;
+  height: 100%; }
+
+.tabs {
+  position: relative;
+  min-height: 80%;
+  /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+  overflow: hidden; }
+
+.tab {
+  float: left;
+  width: 25%; }
+
+.tab label {
+  padding: .4rem 0;
+  margin: 0;
+  position: relative;
+  font-size: 1.5em; }
+
+.tab [type=radio] {
+  display: none; }
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #FFF;
+  right: 0;
+  bottom: 0;
+  padding: 2.2rem 0 0 0; }
+
+[type=radio]:checked ~ label {
+  color: #3F5DD7;
+  border-bottom: 2px solid #3F5DD7;
+  z-index: 2; }
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1; }
+
+.project_container {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.project_visual {
+  position: relative;
+  width: 50%;
+  border-style: solid;
+  border-color: #000; }
+
+.project_visual:before {
+  content: '';
+  display: block;
+  padding-top: 100%; }
+
+.project_visual_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 3%;
+  width: 100%;
+  height: 96%;
+  border-top: solid; }
+
+.project_description {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  right: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0 0 0 1rem; }
+
+.project_description h3 {
+  font-size: 1.5rem;
+  margin: .5rem 0; }
+
+.project_description h4 {
+  margin: 0; }
+
+@media only screen and (max-width: 1224px) {
+  #work {
+    width: 90%;
+    margin: 6rem auto 0 auto; }
+
+  .content {
+    margin: 0 1rem; } }
+@media only screen and (max-width: 1024px) {
+  #work {
+    width: 95%;
+    margin: 6rem 0 0 0; }
+
+  .tab {
+    width: 50%; }
+
+  .content {
+    padding-top: 5rem;
+    margin: 0 4rem 0 0; }
+
+  .second_row {
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    z-index: 999; } }
+/*~~~~~~~~~~~ABOUT.HTML*/
+@keyframes init_header {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes mid_header {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fin_header {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#about_header_init {
+  animation: init_header .2s .2s forwards linear; }
+
+#about_header_mid {
+  opacity: 0;
+  animation: mid_header .5s .4s forwards linear; }
+
+#about_header_fin {
+  opacity: 0;
+  animation: fin_header .01s .8s forwards linear; }
+
+.init {
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+  /* IE */
+  -ms-transform: rotate(-180deg);
+  /* Opera */
+  -o-transform: rotate(-180deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
+
+.mid {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+
+.octagon_inner {
+  position: absolute;
+  top: 10.5vw;
+  left: -15vw;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 39vw;
+  width: 39vw;
+  z-index: -1; }
+
+.octagon_fill {
+  transform: rotate(45deg);
+  overflow: hidden;
+  position: relative;
+  height: 39vw;
+  width: 39vw;
+  background-color: #FFF;
+  z-index: -1; }
+
+.octagon_outer {
+  position: absolute;
+  top: 10vw;
+  left: -15vw;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 40vw;
+  height: 40vw;
+  z-index: -1; }
+
+.octagon_border {
+  transform: rotate(45deg);
+  overflow: hidden;
+  position: relative;
+  width: 40vw;
+  height: 40vw;
+  background-color: rgba(63, 93, 215, 0.5);
+  z-index: -1; }
+
+@keyframes outer-rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(112.5deg); } }
+.octagon_outer.rotate, .octagon_inner.rotate {
+  animation: outer-rotate 1.2s .77s ease-out forwards; }
+
+@keyframes text_rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+    /* Firefox */
+    -moz-transform: rotate(180deg);
+    /* IE */
+    -ms-transform: rotate(180deg);
+    /* Opera */
+    -o-transform: rotate(180deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
+  45% {
+    -webkit-transform: rotate(180deg);
+    /* Firefox */
+    -moz-transform: rotate(180deg);
+    /* IE */
+    -ms-transform: rotate(180deg);
+    /* Opera */
+    -o-transform: rotate(180deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
+  46% {
+    /* Safari */
+    -webkit-transform: rotate(270deg);
+    /* Firefox */
+    -moz-transform: rotate(270deg);
+    /* IE */
+    -ms-transform: rotate(270deg);
+    /* Opera */
+    -o-transform: rotate(270deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+  99% {
+    /* Safari */
+    -webkit-transform: rotate(270deg);
+    /* Firefox */
+    -moz-transform: rotate(270deg);
+    /* IE */
+    -ms-transform: rotate(270deg);
+    /* Opera */
+    -o-transform: rotate(270deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+  100% {
+    /* Safari */
+    -webkit-transform: rotate(0deg);
+    /* Firefox */
+    -moz-transform: rotate(0deg);
+    /* IE */
+    -ms-transform: rotate(0deg);
+    /* Opera */
+    -o-transform: rotate(0deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0); } }
+.about_text_container {
+  position: absolute;
+  top: 10.5rem;
+  /*top: 50%;*/
+  left: 50%;
+  transform: translateX(-50%);
+  /*translateY(-50%);*/ }
+
+#about_text {
+  text-align: justify;
+  font-size: 16px;
+  width: 400px;
+  animation: text_rotate .77s forwards; }
+
+/* CONTACT */
+.contact_text_container {
+  margin: 4rem 9rem;
+  text-align: left;
+  font-size: 1.5rem;
+  z-index: -1; }
+
+.contact_text_container a {
+  color: #3F5DD7; }
+
+#contact_header_initial {
+  color: #3F5DD7;
+  animation: init_header .3s forwards; }
+
+#contact_header_final {
+  z-index: -1; }
+
+#contact_header_final, .contact_text_container {
+  opacity: 0;
+  animation: fin_header .4s  forwards linear; }
+
+/*# sourceMappingURL=style.css:.map */

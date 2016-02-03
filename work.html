@@ -9,25 +9,26 @@
     <link rel="shortcut icon" href="/temp_site/assets/fav.gif">
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <title>Hey</title>
-
   </head>
   <body>
-    <div id="work">
-      <h2 id="header_work">WORK</h2>
+    <div id="nav">
+      <h2 id="nav_home"><a href="index.html"><img src="phoneHome.svg"></a></h2>
+      <h2 id="nav_work"><a href="work.html">WORK</a></h2>
+      <h2 id="nav_about"><a href="about.html">ABOUT</a></h2>
+      <h2 id="nav_contact"><a href="contact.html">CONTACT</a></h2>
+    </div>
+    <div id="work" class="container">
       <div class="tabs">
         <div class="tab">
           <input type="radio" id="tab-1" name="projects" checked>
           <label for="tab-1">WEB APPLICATIONS</label>
-          <div class="content">
+          <div class="tab_content">
             <div class="project_container">
               <div class="project_visual">
-                <object class="project_visual_content" type="text/html" height="96%" width="100%" style="overflow:hidden;" data="work/svg_intro/index.html">
-                </object>
               </div>
               <div class="project_description">
-                <h4>01/16/15</h4>
-                <h3>Client: 10/Half Studios</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h3>Clients: Creative Perspectives, ExploreLearning, AggregateKnowledge, CraigBuilders, CaseNex, UrbMob</h3>
+                <p>Developing web based applications was my first programming experience.  ECMA compliant languges, actionscript and javascript, have dominated dominated my development career.  I've worked with media players, dynamic creative advertisements, lots of educational software, and a some real estate.  My most recent project with Explore Learning, I joined the team in the midst of thier Flash to HTML5 migration. This was my first expeirence doing soley QA. </p>
                 <a href="">LAUNCH SITE &rarr;</a>
               </div>
             </div>
@@ -36,16 +37,14 @@
         <div class="tab">
           <input type="radio" id="tab-2" name="projects">
           <label for="tab-2">SITE DEVELOPMENT</label>
-          <div class="content">
+          <div class="tab_content">
              <div class="project_container">
               <div class="project_visual">
-                <object class="project_visual_content" type="text/html" height="96%" width="100%" style="overflow:hidden;">
-                </object>
+               
               </div>
               <div class="project_description">
-                <h4>02/16/15</h4>
-                <h3>Client: 10/Half Studios</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h3>Clients: GreenspaceStudio, CreativePerspectives, Global Cultrural Distric Network</h3>
+                <p>I've built sites from scratch, customized countless friends' templates, and my MySpace page was pretty slick.  You can get a decent website up these days without any knowledge of HTML, CSS, responsive design, viewports, or root em units.  I'm happy to lend a hand weather the project is 30 minutes or 30 months.</p>
                 <a href="">LAUNCH SITE &rarr;</a>
               </div>
             </div>
@@ -53,63 +52,37 @@
         </div>
         <div class="tab">
           <input type="radio" id="tab-3" name="projects">
-          <label for="tab-3">SVG ANINMATION</label>
-          <div class="content">
+          <label for="tab-3" class="second_row">WEB ANINMATION</label>
+          <div class="tab_content">
              <div class="project_container">
               <div class="project_visual">
-                <object class="project_visual_content" type="text/html" height="96%" width="100%" style="overflow:hidden;">
-                </object>
+               
               </div>
               <div class="project_description">
-                <h4>03/16/15</h4>
-                <h3>Client: 10/Half Studios</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h3>Client: 10/Half Studios, CreativePerspectives, Aggregate Knowledge</h3>
+                <p>I've been fine tuning my 'Tweens' since my teens.  In the develpment of this site, the home page utilizes a home made path morph and GreenSock's TweenMax, the 'about' and 'contact' page is pure CSS, and this page, well, we'll see when I'm done. Previous to that, I worked with 10/Half Studios to create an intro animation for thier client, Taylor.  It creates a unque introduction animation for every viewing.</p>
                 <a href="">LAUNCH SITE &rarr;</a>
               </div>
             </div>
           </div> 
         </div>
-        <div class="tab">
+        <div id="tab4" class="tab">
           <input type="radio" id="tab-4" name="projects">
-          <label for="tab-4">DATA VISUALIZATION</label>
-          <div class="content">
+          <label for="tab-4" class="second_row">DATA VISUALIZATION</label>
+          <div class="tab_content">
              <div class="project_container">
               <div class="project_visual">
-                <object class="project_visual_content" type="text/html" height="96%" width="100%" style="overflow:hidden;">
-                </object>
+                
               </div>
               <div class="project_description">
-                <h4>04/16/15</h4>
-                <h3>Client: 10/Half Studios</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <h3>Clients: Aggregate Knowledge, Explore Learning</h3>
+                <p>Data visualizations were pivitol to my work with the online advertisement analytics juggernaut, Aggregate Knowledge.  I led the production of prototype software features for their invaluable audience analytics dashboard.<br>Coming soon: an 'hourglass' made with javasript library, "D3" to show off on the left.</p>
                 <a href="">LAUNCH SITE &rarr;</a>
               </div>
             </div>
           </div> 
         </div>
       </div>
-      <!--
-      <ul class="project_types">
-        <li>WEB APPLICATIONS</li>
-        <li>SITE DEVELOPMENT</li>
-        <li>SVG ANIMATION</li>
-        <li>DATA VISUALIZATION</li>
-      </ul>
-      <div class="project_container">
-        <div class="project_visual">
-          <object class="project_visual_content" type="text/html" height="96%" width="100%" style="overflow:hidden;" data="work/svg_intro/index.html">
-          </object>
-        </div>
-        <div class="project_description">
-          <h4>01/16/15</h4>
-          <h3>Client: 10/Half Studios</h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          <a href="">LAUNCH SITE &rarr;</a>
-        </div>
-      </div>-->
     </div>
-    
-    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>-->
    </body>
 </html>
